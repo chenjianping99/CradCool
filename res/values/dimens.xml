@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="notification_profile_pic_width">55.0dip</dimen>
+    <dimen name="notification_profile_pic_height">55.0dip</dimen>
+    <dimen name="notification_profile_pic_margin">1.0dip</dimen>
+    <dimen name="notification_thumbnail_width">60.0dip</dimen>
+    <dimen name="notification_profile_pic_height1">58.0dip</dimen>
+    <dimen name="notification_text_size">14.0sp</dimen>
+
+    <!-- 甩动删除的速度上限 -->
+    <integer name="config_flingToDeleteMinVelocity">-1500</integer>
+
+    <!-- 底部评论条的高度 -->
+    <dimen name="comment_view_height">50dip</dimen>
+    <dimen name="comment_view_icon_w">30dip</dimen>
+    <dimen name="comment_view_icon_h">30dip</dimen>
+    
+    <dimen name="choose_app_grid_height">430dip</dimen>
+    <dimen name="choose_app_grid_width">305dip</dimen>
+    <dimen name="choice_item_height">48dip</dimen>
+	<dimen name="choice_item_bg_height">58dip</dimen>
+	<dimen name="folder_edit_top_bottom_hight">40dip</dimen>
+	
+	<dimen name="blindHeight">20dp</dimen>  <!-- 每个百页窗高度 -->
+    <dimen name="touchEffectRadius">80dp</dimen> <!-- 整体百页窗高度 -->
+    <dimen name="blindStrokeWidth">1.5dp</dimen> <!-- 百页窗下檐线的高度 -->
+
+</resources>

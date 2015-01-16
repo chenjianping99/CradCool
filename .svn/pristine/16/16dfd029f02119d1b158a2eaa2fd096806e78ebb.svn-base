@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">GO Locker Card Cool Theme</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_title">Download GO Locker</string>
+    <string name="dialog_message">Notice: GO Locker not installed，please download.</string>
+    <string name="theme_name">Card Cool</string>
+    <string name="author">GO Launcher Dev Team</string>
+    <string name="email">golauncher@goforandroid.com</string>
+    <string name="homepage">golauncher.goforandroid.com</string>
+    <string name="architecture">8</string>
+    <string name="isapp">1</string>
+    <string name="iscustombg">1</string>
+    <string name="restart_on_replaced">1</string>
+    <string name="hasMusic">true</string>
+
+    <!-- 是否有主题设置 -->
+    <string name="hasSetting">true</string>
+    <!-- 是否预览本主题。1：预览；0：不预览（只对APP主题有效） -->
+    <string name="ispreview_theme">1</string>
+    <!-- 如果有天气，表明语言，空或者default为自动获取系统语言 -->
+    <string name="weather_language">en_US</string>
+     <!-- android 4.4 -->
+    <string name="translucentSysBar">true</string>
+
+
+    <!-- Download -->
+    <string name="next">Next</string>
+    <string name="server_begin_download">Begin to download</string>
+    <string name="server_download_finish">Completed,click here to install</string>
+    <string name="server_download_fail">Fail</string>
+    <string name="server_downloading">Downloading</string>
+    <string name="server_download_file_name">GO Locker</string>
+    <string name="day_of_week_long_sunday">Sunday</string>
+    <string name="day_of_week_long_monday">Monday</string>
+    <string name="day_of_week_long_tuesday">Tuesday</string>
+    <string name="day_of_week_long_wednesday">Wednesday</string>
+    <string name="day_of_week_long_thursday">Thursday</string>
+    <string name="day_of_week_long_friday">Friday</string>
+    <string name="day_of_week_long_saturday">Saturday</string>
+    <string name="day_of_week_medium_sunday">Sun</string>
+    <string name="day_of_week_medium_monday">Mon</string>
+    <string name="day_of_week_medium_tuesday">Tue</string>
+    <string name="day_of_week_medium_wednesday">Wed</string>
+    <string name="day_of_week_medium_thursday">Thu</string>
+    <string name="day_of_week_medium_friday">Fri</string>
+    <string name="day_of_week_medium_saturday">Sat</string>
+    <string name="charging">Charging</string>
+    <string name="battery">Battery</string>
+    <string name="duration">200</string>
+    <string name="slideunlock">Slide to unlock</string>
+
+    <string-array name="week">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="abbweek">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="month_of_short_january">Jan</string>
+    <string name="month_of_short_february">Feb</string>
+    <string name="month_of_short_march">Mar</string>
+    <string name="month_of_short_april">Apr</string>
+    <string name="month_of_short_may">May</string>
+    <string name="month_of_short_june">June</string>
+    <string name="month_of_short_july">July</string>
+    <string name="month_of_short_august">Aug</string>
+    <string name="month_of_short_september">Sept</string>
+    <string name="month_of_short_october">Oct</string>
+    <string name="month_of_short_november">Nov</string>
+    <string name="month_of_short_december">Dec</string>
+
+    <!-- 短信和电话应用程序的关键字 -->
+    <!-- 拨号识别数组 -->
+    <string-array name="notifiction_dialers_array">
+        <item>dialer</item>
+        <item>Dialer</item>
+        <item>android.intent.action.DIAL</item>
+        <item>DialtactsActivity</item>
+        <item>com.jbapps.contact/.ui.MainEntry</item>
+        <item>com.jbapps.contactpro/.ui.MainEntry</item>
+    </string-array>
+
+    <!-- 添加应用快捷方式窗口 -->
+    <string name="list_of_applications">Application List</string>
+    <string name="finish">Finish</string>
+    <string name="cancle">Cancel</string>
+    <string name="loading_app">Loading, please wait...</string>
+    <string name="saving_app">Saving, please wait...</string>
+    <string name="overflow_tip">3 custom shortcuts are maximum</string>
+    <string name="camera">Camera</string>
+    <string name="phone">Phone</string>
+    <string name="browser">Browser</string>
+    <string name="messaging">Messaging</string>
+
+    <!-- 短信缺省识别数组 -->
+    <string-array name="notification_default_sms_array">
+
+        <!-- 系统短信一般会包含的字符串 -->
+        <item>messaging</item>
+        <!-- 特殊第三方短信程序 -->
+        <item>ui.ConversationList</item>
+    </string-array>
+
+    <!-- 短信完整识别数组 -->
+    <string-array name="notification_full_sms_array">
+
+        <!-- 系统短信一般会包含的字符串 -->
+        <item>com.android.mms</item>
+        <!-- 特殊第三方短信程序 -->
+        <item>com.jb.mms</item>
+        <item>com.jb.gosms</item>
+        <item>com.handcent.nextsms</item>
+        <item>com.p1.chompsms</item>
+    </string-array>
+
+    <!-- 引导界面 -->
+    <string name="title1">GO Locker, The Coolest Locker For Phone</string>
+    <string name="title_hint">Please Install GO Locker To Active Themes</string>
+    <string name="bt_title">Download GO Locker</string>
+    <string name="experience">Preview</string>
+
+    <!-- 通知栏推送 -->
+    <string name="notification_content">Install GO Launcher EX, Countless Themes For You</string>
+    <string name="server_download_launcehr_file_name">GO Launcher</string>
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+
+    <!-- 主题设置 （自定义快捷方式） -->
+    <string name="theme_set">Theme set</string>
+    <string name="theme_reset">Reset</string>
+    <string name="theme_tips">Temperature scale</string>
+    <string name="theme_bg_change">Choose folder</string>
+    <string name="theme_apply">Apply</string>
+    <string name="theme_c">°C</string>
+    <string name="theme_f">°F</string>
+    <string name="theme_unknow">Unknown</string>
+    <string name="change_avatar">Change Avatar</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="return_to_root">Return to root</string>
+    <string name="return_to_pre">Return to Previous</string>
+    <string name="settingreset">Setting reset succeed</string>
+    <string name="settingfolder">Setting folder succeed</string>
+
+    <!-- 天气信息 -->
+    <string name="weather_unknow">Unknown</string>
+    <string name="weather_sunny">Sunny</string>
+    <string name="weather_cloudy">Cloudy</string>
+    <string name="weather_overcast">OverCast</string>
+    <string name="weather_snowy">Snowy</string>
+    <string name="weather_fog">Fog</string>
+    <string name="weather_rainy">Rainy</string>
+    <string name="weather_thunderstorm">Thunderstorm</string>
+    <string name="cunrrent_temperature">Feel like:</string>
+    <string name="hight_low">High/Low:</string>
+    <string name="weather_type">Weather:</string>
+    <string name="weather_city">Current City:</string>
+
+    <!-- 截图相关 -->
+    <string name="crop_save_text">Save</string>
+    <string name="crop_discard_text">Discard</string>
+    <string name="err_out_of_memory">Out of Memory!</string>
+    <string name="savingImage">Saving picture...</string>
+
+    <!-- 主题设置 -->
+    <string name="update_state_loading">Loading</string>
+    <string name="theme_picture">Picture</string>
+
+    <!-- 。。。。。。。。。。。。天气新模板用到。。。。。。。。。。。。。。。。。 -->
+    <!-- 城市 -->
+    <string name="weather_city_tips">Location</string>
+    <string name="weather_city_auto">Auto-locate</string>
+    <string name="weather_city_setting">Manually select</string>
+    <string name="weather_city_info_tips">Select city</string>
+    <string name="weather_guanggao">Download GO Werther EX</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="locate_timeout">Locate timeout</string>
+    <!-- 。。。。。。。。。。。。天气新模板用到。。。。。。。。。。。。。。。。。 -->
+
+    <string name="bg_choice">Image Select</string>
+    <string name="background">Background Image</string>
+    <string name="head">Head Portrait</string>
+
+    <!-- 开关需要 -->
+    <!-- 手电筒 -->
+    <string name="flashlight">Flashlight</string>
+    <string name="bettery_circs_not_found">Not permission. Bettery info cannot be show.</string>
+    <string name="bluetooth_internal_error">Internal error. Please close Bluetooth in system settings. </string>
+    <string name="bluetooth_airplane_on_tips">Phone is in airplane mode,so you can not control bluetooth setting.</string>
+    <string name="bluetooth_no_adapter">System can not find Bluetooth adapter. Bluetooth can not work.</string>
+    <string name="gprs_func_tips">Please set mobile network data enable first.</string>
+    <string name="gprs_func_sdk_tips">Mobile network is only supported by Android2.2 and
+		higher.</string>
+    <string name="gps_func_tips">Cannot open/close GPS with GO SwitchWidget</string>
+    <string name="button_open_white">Change to white screen</string>
+    <string name="prompt_open_camera_failed">Fail to open flash lamp</string>
+    <string name="lock_screen_func_tips">Lock screen is only supported by Android2.2 and Higher.</string>
+    <string name="lock_internal_error_new_screen">Internal error. Please deactivate switch in system settings.</string>
+    <string name="lock_internal_error_remove_componentname">Lock screen failed. The issue may get fixed by reboot your phone or deactivate and activate lock screen again.</string>
+    <string name="lock_internal_error">Internal error. Please try to lock screen again.</string>
+    <string name="lock_screen_tips">Please assign the Auto-lock right to Switch to activate the screen-lock functionality.</string>
+    <string name="sdk_volume_func_tips">SD Unmount is only supported by Android2.2 and Higher.</string>
+    <string name="sdk_sd_in_mass">You can not set SD unmount when SD is in mass state.</string>
+    <string name="sdk_mass_func_tips">SD Mass is only supported by Android2.2 and higher.</string>
+    <string name="not_connect_not_support">USB is not connected or massive storage function is not supported</string>
+    <string name="sd_mass_tips">Mount SD card first</string>
+    <string name="wifi_internal_error">Internal error. Please close WIFI in system settings. </string>
+    <string name="wifi_ap_func_tips">WIFI AP is only supported by Android2.2 and
+		higher.</string>
+    <string name="no_wifi_ap_func_tips">Your phone do not have WIFI AP or control WIFI AP fail.</string>
+    <string name="sure">Sure</string>
+    <string name="rebootdlatitle">Reboot Dialog</string>
+    <string name="rebootsure">Are you sure to reboot?</string>
+    <string name="reboot_tips">Reboot needs root.</string>
+    
+    <string name="unlock_tip">Slide to unlock > </string>
+    <string name="sms_tip">"Unread messages will be displayed here"</string>
+    
+	<string name="setting_page_weather_location">Location</string>
+    <string name="setting_page_weather_temperature">Temperature</string>
+	<string name="setting_page_weather_title">Theme Settings</string>
+
+	
+	<string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+</resources>

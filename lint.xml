@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/jiubang/goscreenlock/theme/cjpcardcool/view/BodyViewPager.java" />
+        <ignore path="src/com/jiubang/goscreenlock/theme/cjpcardcool/view/UnlockViewPager.java" />
+        <ignore path="src/com/jiubang/goscreenlock/theme/cjpcardcool/view/ViewPagerMusic.java" />
+        <ignore path="src/com/jiubang/goscreenlock/theme/cjpcardcool/view/ViewPagerSwitcher.java" />
+        <ignore path="src/com/jiubang/goscreenlock/theme/cjpcardcool/view/blindsview/BlindsView.java" />
+    </issue>
+</lint>

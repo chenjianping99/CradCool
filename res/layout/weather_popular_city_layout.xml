@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/weather_bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/weather_guanggao_popular"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/weather_guanggao"
+        android:gravity="center_vertical"
+        android:text="@string/weather_guanggao"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp" />
+    
+    <LinearLayout
+        android:id="@+id/act_add_city_popular_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/weather_guanggao_popular"
+        android:background="@drawable/weather_bg_white"
+        android:orientation="vertical" >
+        
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/popular_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weather_share_weather_top_bar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/add_city_title"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip" >
+
+            <ImageView
+                android:id="@+id/add_city_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dip"
+                android:contentDescription="@null"
+                android:src="@drawable/weather_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="8dip"
+                android:layout_toRightOf="@+id/add_city_title_back"
+                android:singleLine="true"
+                android:text="@string/addcity_popular_city_label"
+                android:textColor="#ffffffff"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 列表 -->
+
+    <ListView
+        android:id="@+id/add_city_popular_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/weather_add_city_line"
+        android:dividerHeight="0.5dip" />
+
+</LinearLayout>
+</RelativeLayout>

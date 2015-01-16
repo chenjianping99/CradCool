@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/theme_Bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/golocker_theme_bg" >
+
+    <!-- Title -->
+
+    <LinearLayout
+        android:id="@+id/detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/golocker_head"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_weight="0.1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/golocker_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dip"
+                android:text="@string/title1"
+                android:textColor="#8FC31f"
+                android:textSize="18dip" />
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textColor="#8FC31f"
+                android:textSize="18dip"
+                android:paddingTop="3dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/golauncher_guider_title"
+                android:textColor="#8FC31f"
+                android:textSize="12dip"
+				android:paddingTop="3dip"/>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Layout -->
+
+    <LinearLayout
+        android:id="@+id/detail_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dip"
+        android:layout_marginLeft="23dip"
+        android:layout_marginRight="23dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!--
+             <Button
+            android:id="@+id/download_gl"
+            android:layout_width="130dip"
+            android:layout_height="43dip"
+            android:background="@drawable/download_launcher_selector"
+            android:layout_gravity="center"
+            android:text="@string/golocker_paid_view_btn_install_launcher"
+            android:textColor="#ffffff" />
+        -->
+		<Button
+            android:id="@+id/download"
+            android:layout_width="275dip"
+            android:layout_height="48dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/golocker_bt_select"
+            android:text="@string/bt_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/download_with_preview"
+            android:layout_width="130dip"
+            android:layout_height="43dip"
+            android:layout_gravity="center"
+            android:background="@drawable/golocker_bt_select"
+            android:text="@string/bt_title"
+            android:textColor="#ffffff" />
+        
+        <Button
+            android:id="@+id/experience_theme"
+            android:layout_width="130dip"
+            android:layout_height="43dip"
+            android:background="@drawable/golocker_bt_select"
+            android:text="@string/experience"
+            android:textColor="#ffffff" 
+            android:layout_marginLeft="8dip"/>
+        
+    </LinearLayout>
+
+    <!-- Tips -->
+
+    <TextView
+        android:id="@+id/tips_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/detail_buttons"
+        android:gravity="center"
+        android:minHeight="27dip"
+        android:text="@string/title_hint"
+        android:textColor="#898989"
+        android:textSize="13dip"
+        android:textStyle="bold" />
+
+    <!-- 有多少个预览图 ，下面就有对应数量的小正方形 -->
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="21dip"
+        android:layout_above="@id/tips_txt"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- PageView -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_above="@id/llayout"
+        android:layout_below="@id/detail_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

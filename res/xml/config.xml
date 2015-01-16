@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+<!-- getjar -->
+<appid_getjar>cbe484b6-0da4-4b94-fb33-a77c5a8d8705</appid_getjar>
+<token_getjar>0000MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDuaXYAwiRbWdaW0bavp4E6UbZMvJoQ1FeZFzZJSruuyO+WKVkGCFJtkRw1a09HcGN3pM906nuEWd4Y0CHprYVs7efl9ZDMOjzwGwhP2tVAbJnLDXBWvxzY/nAGdP93VnD/1BbC033AX2CdqzD9qUJmXKhSGxYZnKuK8b8wrMMDQIDAQAB</token_getjar>
+<!-- sponsorpay -->
+<appid_sponsorpay>11739</appid_sponsorpay>
+<token_sponsorpay>2a73fc55825c60d5a199a1908206288e</token_sponsorpay>
+
+<!-- tapjoy -->
+<appid_tapjoy>3d4bb4dc-8da6-4b8a-9a85-f765990b1aff</appid_tapjoy>
+<token_tapjoy>LwdKLJjQUsPryBcVOe2s</token_tapjoy>
+
+<!-- app-billing security key -->
+<security_key>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA489VhHS/JKyqt3y757u+DEBs8OiJleSOKSDp35kV4NBKx9g7O4NN5lz2qcT+1DY6JH81XVSlVFD6PqpBxmxchEhMtPRWAeI1aSzJzcVq5BdAvmHYLyDYkdHexryzwVKU5ELsOhvk+Q01pOMqi4j/HRV51KUfBTlc60RTMBlYDyNkCtyO8BH06DSi01xsTSWHX5Qc9q2fNk9BPP75S0ZjdvS+lbAJTkfNCerj6Nm+WDSb151I+QRcUVIhhq4LPjEqmxDpOMqgippHt9ZX7j9o1b06FVbBLoNA41PJx1WYDOrdNd2PPew4KailAKHB748daQtLfR9S8Ul+USYET5olVQIDAQAB</security_key>
+<!-- price -->
+<price_getjar>200</price_getjar>
+<price_sponsorpay>100</price_sponsorpay>
+<price_tapjoy>150</price_tapjoy>
+</configs>

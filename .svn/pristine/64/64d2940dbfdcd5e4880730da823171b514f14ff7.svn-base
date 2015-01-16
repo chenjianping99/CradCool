@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_list_item_height"
+    android:background="@drawable/weather_setting_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dialog_message_padding"
+    android:paddingRight="@dimen/dialog_message_padding" >
+
+    <TextView
+        android:id="@+id/single_item_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dialog_list_item_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/dialog_black"
+        android:textSize="@dimen/dialog_text_size" />
+
+    <RadioButton
+        android:id="@+id/single_item_ratiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableRight="@drawable/weather_setting_radio_button"
+        android:focusable="false" />
+
+</LinearLayout>

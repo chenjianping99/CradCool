@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GOLockerThemecjpcardcool" default="release">
+	<property file="build.properties" />
+	<loadproperties srcFile="project.properties" />
+	<import file="${sdk.dir}/tools/ant/build.xml" />
+</project>
+          

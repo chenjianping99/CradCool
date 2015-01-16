@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dip"
+    android:layout_height="344dip"
+    android:gravity="center" >
+
+    <ImageView
+        android:layout_width="210dip"
+        android:layout_height="344dip"
+        android:layout_gravity="center"
+        android:background="@drawable/guide_layout_preview_bg" />
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="200dip"
+        android:layout_height="334dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="4dip" />
+
+</RelativeLayout>

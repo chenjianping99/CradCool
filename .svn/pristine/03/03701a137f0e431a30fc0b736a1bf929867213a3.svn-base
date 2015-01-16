@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="swithcer_layout" type="id">false</item>
+    <item name="missed_phone_view" type="id">false</item>
+
+</resources>

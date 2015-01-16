@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.goscreenlock.theme.cjpcardcool.view.SideBarVLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+
+     <ImageView
+        android:id="@+id/bluetooth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/airplane"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+    
+    
+    <ImageView
+        android:id="@+id/sound"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+    
+     <ImageView
+        android:id="@+id/gprs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+
+</com.jiubang.goscreenlock.theme.cjpcardcool.view.SideBarVLayout>

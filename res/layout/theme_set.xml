@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/theme_set_chosestore_bg"
+    android:orientation="vertical" > -->
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9" >
+    
+        <!-- 标题栏 -->
+
+	<LinearLayout android:id="@+id/theme_setting_top"
+	    android:layout_width="match_parent"
+	    android:layout_height="61dip"
+	    android:background="@drawable/setting_page_title_bg"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal" >
+	
+	    <!-- 标题返回按键 -->
+	
+	    <RelativeLayout
+	        android:id="@+id/go_lock_back_title_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/row_setting_selector"
+	        android:clickable="true" >
+	
+	        <ImageView
+	            android:id="@+id/go_lock_back_title_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:padding="15dp"
+	            android:src="@drawable/slide_menu_back" />
+	
+	        <TextView
+	            android:id="@+id/go_lock_back_tile_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:layout_marginLeft="72dp"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:text="@string/setting_page_weather_title" />
+	    </RelativeLayout>
+	
+	</LinearLayout>
+	
+	
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/theme_setting_top" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <LinearLayout
+                android:id="@+id/custom_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.jiubang.goscreenlock.theme.cjpcardcool.util.ItalicTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:singleLine="true"
+                    android:text="@string/setting_page_weather_location"
+                    android:textColor="#7c7c7c"
+                    android:textSize="13.3sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/setting_page_item_bg"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:id="@+id/auto_locate"
+                        layout="@layout/my_preference_summary" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/home_list_line" />
+
+                    <include
+                        android:id="@+id/manually_select"
+                        layout="@layout/my_preference_summary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/custom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.jiubang.goscreenlock.theme.cjpcardcool.util.ItalicTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:singleLine="true"
+                    android:text="@string/setting_page_weather_temperature"
+                    android:textColor="#7c7c7c"
+                    android:textSize="13.3sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/setting_page_item_bg"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:id="@+id/unit_c"
+                        layout="@layout/my_preference_summary" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/home_list_line" />
+
+                    <include
+                        android:id="@+id/unit_f"
+                        layout="@layout/my_preference_summary" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+	
+	
+	
+
+<!--     <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/theme_set_chosestore_top"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:layout_width="108dip"
+            android:layout_height="36dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/theme_set_theme_button_set"
+            android:gravity="center_vertical"
+            android:text="@string/theme_set"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/theme_default"
+            android:layout_width="108dip"
+            android:layout_height="36dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/theme_set_mytheme_button_bg_selector"
+            android:text="@string/theme_reset"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_weight="6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:id="@+id/custom_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/weather_city_tips"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/theme_city_auto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_listview_bg_selector"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="@string/weather_city_auto"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/city_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/theme_city_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_listview_bg_selector"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@null"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/weather_city_mansel"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/city_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/custom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/theme_tips"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/theme_f_change"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_listview_bg_selector"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="5dip" >
+
+                    <TextView
+                        android:id="@+id/intent_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="@string/theme_f"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/theme_c_change"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_listview_bg_selector"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="5dip" >
+
+                    <TextView
+                        android:id="@+id/intent_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/theme_c"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_set_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <Button
+            android:id="@+id/theme_apply"
+            android:layout_width="108dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center"
+            android:background="@drawable/theme_set_apply_button_bg_selector"
+            android:text="@string/theme_apply"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout> -->
+
+</RelativeLayout>

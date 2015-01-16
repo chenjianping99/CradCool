@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 联网搜索 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0"
+                android:text="联网搜索:“"
+                android:textColor="#FF888888"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/add_china_city_keyword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="180dip"
+                android:singleLine="true"
+                android:text="keyword"
+                android:textColor="#FF888888"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="0"
+                android:text="”"
+                android:textColor="#FF888888"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_city_search_submit"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:layout_weight="0"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/weather_add_china_city_search_btn" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weather_add_city_line"
+        android:contentDescription="@null" />
+
+</LinearLayout>

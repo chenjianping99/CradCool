@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dialog_padding"
+    android:layout_marginRight="@dimen/dialog_padding"
+    android:background="@drawable/weather_dialog_bg"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <LinearLayout
+        android:id="@+id/dialog_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/dialog_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:layout_marginLeft="@dimen/dialog_message_padding"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/dialog_title"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+        <!-- 分割线 -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@drawable/weather_setting_line"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <!-- 主体容器 -->
+
+    <LinearLayout
+        android:id="@+id/dialog_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <!-- 蓝色的文本 -->
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:minWidth="200dip"
+            android:paddingLeft="@dimen/dialog_message_padding"
+            android:paddingRight="@dimen/dialog_message_padding"
+            android:paddingTop="16dp"
+            android:textColor="@color/dialog_blue"
+            android:textSize="@dimen/dialog_text_size" />
+
+        <!-- 单选／多选列表 -->
+
+        <ListView
+            android:id="@+id/dialog_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/weather_dotted_line"
+            android:fadingEdge="none"
+            android:scrollbarThumbVertical="@drawable/weather_forecast_article_drag_vertical"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 黑色的文本 -->
+
+    <TextView
+        android:id="@+id/dialog_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/dialog_message_padding"
+        android:paddingRight="@dimen/dialog_message_padding"
+        android:paddingTop="10dp"
+        android:textColor="@color/dialog_black"
+        android:textSize="@dimen/dialog_text_size"
+        android:visibility="gone" />
+
+    <!-- 分割线 -->
+
+    <ImageView
+        android:id="@+id/list_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weather_dotted_line"
+        android:contentDescription="@null" />
+
+    <!-- 按钮 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <!-- 蓝色的按钮 -->
+
+        <Button
+            android:id="@+id/dialog_single_button"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_marginBottom="@dimen/dialog_button_padding_bottom"
+            android:layout_marginLeft="@dimen/setting_padding_left"
+            android:layout_marginRight="@dimen/setting_padding_right"
+            android:layout_marginTop="@dimen/dialog_button_padding_top"
+            android:layout_weight="1"
+            android:background="@drawable/weather_gw_weather_feedback_button2_bg"
+            android:text="@android:string/ok"
+            android:textColor="@color/dialog_white"
+            android:textSize="@dimen/dialog_text_size"
+            android:visibility="gone" />
+
+        <!-- 白色的按钮 -->
+
+        <Button
+            android:id="@+id/dialog_positive_button"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_marginBottom="@dimen/dialog_button_padding_bottom"
+            android:layout_marginLeft="@dimen/setting_padding_left"
+            android:layout_marginRight="@dimen/setting_padding_right"
+            android:layout_marginTop="@dimen/dialog_button_padding_top"
+            android:layout_weight="1"
+            android:background="@drawable/weather_btn_white"
+            android:text="@android:string/ok"
+            android:textColor="@color/dialog_black"
+            android:textSize="@dimen/dialog_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dialog_neutral_button"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_marginBottom="@dimen/dialog_button_padding_bottom"
+            android:layout_marginLeft="@dimen/setting_padding_left"
+            android:layout_marginRight="@dimen/setting_padding_right"
+            android:layout_marginTop="@dimen/dialog_button_padding_top"
+            android:layout_weight="1"
+            android:background="@drawable/weather_btn_white"
+            android:text="@android:string/ok"
+            android:textColor="@color/dialog_black"
+            android:textSize="@dimen/dialog_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dialog_negative_button"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_marginBottom="@dimen/dialog_button_padding_bottom"
+            android:layout_marginLeft="@dimen/setting_padding_left"
+            android:layout_marginRight="@dimen/setting_padding_right"
+            android:layout_marginTop="@dimen/dialog_button_padding_top"
+            android:layout_weight="1"
+            android:background="@drawable/weather_btn_white"
+            android:text="@android:string/cancel"
+            android:textColor="@color/dialog_black"
+            android:textSize="@dimen/dialog_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

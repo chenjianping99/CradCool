@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/weather_bg_white">
+
+    <TextView
+        android:id="@+id/weather_guanggao_china"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/weather_guanggao"
+        android:gravity="center_vertical"
+        android:text="@string/weather_guanggao"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp" />
+    
+    <LinearLayout
+        android:id="@+id/act_add_china_city_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/weather_guanggao_china"
+        android:background="@drawable/weather_bg_white"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <RelativeLayout
+            android:id="@+id/add_china_city_title"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/weather_share_weather_top_bar_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:singleLine="true"
+                android:text="@string/addcity_title_label"
+                android:textColor="#ffffffff"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:id="@+id/add_china_city_title_curcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dip" >
+
+                <ImageView
+                    android:id="@+id/add_china_city_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/weather_gps_btn" />
+
+                <ProgressBar
+                    android:id="@+id/add_china_city_curcity_progress"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 搜索栏 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_marginTop="18dip" >
+
+            <RelativeLayout
+                android:id="@+id/add_china_city_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/add_city_search_margin_bottom"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/weather_addcity_search_input_bg" >
+
+                <ImageButton
+                    android:id="@+id/add_china_city_search_dummy"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    android:contentDescription="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@+id/add_china_city_search_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/addcity_search_input_default"
+                    android:imeOptions="actionDone"
+                    android:inputType="textUri"
+                    android:maxLength="40"
+                    android:paddingRight="32dip"
+                    android:singleLine="true"
+                    android:textColor="#FFA0A0A0"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/add_china_city_search_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/weather_delete" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/add_china_city_example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="13dip"
+            android:text="@string/addcity_search_exampletext"
+            android:textColor="#FF535353"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/search_city_label"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/weather_add_ctiy_label" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weather_add_city_line" />
+
+            <TextView
+                android:id="@+id/china_popular_city_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:text="@string/addcity_popular_city_label"
+                android:textColor="#FF7CCDF3"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- 搜索结果 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 热门城市 -->
+
+            <GridView
+                android:id="@+id/add_china_city_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="23dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="12dip"
+                android:numColumns="4"
+                android:verticalSpacing="17dip" />
+
+            <!-- 列表 -->
+
+            <ListView
+                android:id="@+id/add_china_city_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#3ff0f0f0"
+                android:dividerHeight="0.8dip"
+                android:visibility="gone" />
+
+            <!-- 联网搜索按钮 -->
+
+            <include
+                android:id="@+id/add_china_city_web_search_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/weather_add_china_city_list_header"
+                android:visibility="gone" />
+
+            <!-- 联网搜索为空时的提示 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/add_china_city_search_tip_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:paddingLeft="10dip"
+                    android:text="@string/addcity_search_tip_label"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/add_china_city_search_tip_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/addcity_search_tip_1"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/add_china_city_search_tip_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/addcity_search_tip_2"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/add_china_city_search_tip_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/addcity_search_tip_3"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

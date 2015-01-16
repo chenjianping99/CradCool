@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 问题反馈界面的按钮样式二 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/weather_feedback_button2_unusable" android:state_enabled="false"/>
+    <item android:drawable="@drawable/weather_feedback_button2_click" android:state_pressed="true"/>
+    <item android:drawable="@drawable/weather_feedback_button2"/>
+</selector>

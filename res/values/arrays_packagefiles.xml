@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="package_files">
+  		<item>package_files_1</item>
+  		<item>package_files_2</item>
+  		<item>package_files_3</item>
+  		<item>package_files_4</item>
+  	</string-array>
+</resources>

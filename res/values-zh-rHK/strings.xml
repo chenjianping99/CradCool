@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GO鎖屏Card Cool主題</string>
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_title">下載GO鎖屏</string>
+    <string name="dialog_message">提示：當前系統沒有安裝GO鎖屏，是否立刻安裝？</string>
+    <string name="theme_name">Card Cool</string>
+    <string name="next">下一步</string>
+    <!-- Download -->
+    <string name="server_begin_download">開始下載</string>
+    <string name="server_download_finish">下載完成，點擊安裝</string>
+    <string name="server_download_fail">下載失敗</string>
+    <string name="server_downloading">正在下載</string>
+    <string name="server_download_file_name">GO锁屏</string>
+    <string name="day_of_week_long_sunday">星期日</string>
+    <string name="day_of_week_long_monday">星期一</string>
+    <string name="day_of_week_long_tuesday">星期二</string>
+    <string name="day_of_week_long_wednesday">星期三</string>
+    <string name="day_of_week_long_thursday">星期四</string>
+    <string name="day_of_week_long_friday">星期五</string>
+    <string name="day_of_week_long_saturday">星期六</string>
+    <string name="day_of_week_medium_sunday">周日</string>
+    <string name="day_of_week_medium_monday">周一</string>
+    <string name="day_of_week_medium_tuesday">周二</string>
+    <string name="day_of_week_medium_wednesday">周三</string>
+    <string name="day_of_week_medium_thursday">周四</string>
+    <string name="day_of_week_medium_friday">周五</string>
+    <string name="day_of_week_medium_saturday">周六</string>
+    <string name="charging">充電中</string>
+    <string name="battery">電量</string>
+    <string name="slideunlock">滑  動  以  解  鎖</string>
+
+    <string-array name="arry_months">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string-array name="abbweek">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <!-- 引导界面 -->
+    <string name="title1">GO鎖屏,最酷最炫的手機鎖屏</string>
+    <string name="title_hint">請安裝GO鎖屏以應用鎖屏主題</string>
+    <string name="bt_title">下載GO鎖屏</string>
+    <string name="experience">主題預覽</string>
+
+    <!-- 通知栏推送 -->
+    <string name="notification_content">安裝GO桌麵,無數主題任供您選擇</string>
+    <string name="server_download_launcehr_file_name">GO桌面</string>
+    <string name="month_of_short_january">一月</string>
+    <string name="month_of_short_february">二月</string>
+    <string name="month_of_short_march">三月</string>
+    <string name="month_of_short_april">四月</string>
+    <string name="month_of_short_may">五月</string>
+    <string name="month_of_short_june">六月</string>
+    <string name="month_of_short_july">七月</string>
+    <string name="month_of_short_august">八月</string>
+    <string name="month_of_short_september">九月</string>
+    <string name="month_of_short_october">十月</string>
+    <string name="month_of_short_november">十一月</string>
+    <string name="month_of_short_december">十二月</string>
+
+    <!-- 主题设置 （自定义快捷方式） -->
+    <string name="theme_set">主題設置</string>
+    <string name="theme_reset">重置</string>
+    <string name="theme_tips">溫標</string>
+    <string name="theme_bg_change">選擇文件夾</string>
+    <string name="theme_apply">應用</string>
+    <string name="theme_c">°C</string>
+    <string name="theme_f">°F</string>
+    <string name="theme_unknow">未知</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_confirm">確定</string>
+    <string name="return_to_root">返迴根目录</string>
+    <string name="return_to_pre">返迴上一層</string>
+    <string name="settingreset">重置成功</string>
+    <string name="settingfolder">文件夾設置成功</string>
+
+    <!-- 天气信息 -->
+    <string name="weather_unknow">未知</string>
+    <string name="weather_sunny">晴</string>
+    <string name="weather_cloudy">多雲</string>
+    <string name="weather_overcast">陰天</string>
+    <string name="weather_snowy">雪</string>
+    <string name="weather_fog">霧</string>
+    <string name="weather_rainy">雨</string>
+    <string name="weather_thunderstorm">雷雨</string>
+
+    <!-- 截图相关 -->
+    <string name="crop_save_text">保存</string>
+    <string name="crop_discard_text">取消</string>
+    <string name="err_out_of_memory">内存不足!</string>
+    <string name="savingImage">保存文件...</string>
+    <string name="time_am">上午</string>
+    <string name="time_pm">下午</string>
+
+    <!-- 主题设置 -->
+    <string name="theme_picture">圖片</string>
+    <!-- 。。。。。。。。。。。。天气新模板用到。。。。。。。。。。。。。。。。。 -->
+    <!-- 城市 -->
+    <string name="weather_guanggao">下載GO天氣EX</string>
+    <string name="weather_city_tips">城市定位</string>
+    <string name="weather_city_auto">自動定位</string>
+    <string name="weather_city_setting">手動選擇</string>
+    <string name="weather_city_info_tips">選擇城市</string>
+    <!-- 。。。。。。。。。。。。天气新模板用到。。。。。。。。。。。。。。。。。 -->
+    <string name="bg_choice">圖片選擇</string>
+    <string name="background">背景圖片</string>
+    <string name="head">頭像</string>
+    <string name="unlock_tip">右滑解鎖 > </string>
+    <string name="sms_tip">"您收到的未讀信息將會顯示在這裡"</string>
+</resources>

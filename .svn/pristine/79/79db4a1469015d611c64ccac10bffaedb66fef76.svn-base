@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/firstTip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/tip_first"
+        android:textColor="#FF535353"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/secondTip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="6dip"
+        android:text="@string/tip_second"
+        android:textColor="#FF535353"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/thirdTip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="6dip"
+        android:text="@string/tip_third"
+        android:textColor="#FF535353"
+        android:textSize="16sp" />
+
+</LinearLayout>

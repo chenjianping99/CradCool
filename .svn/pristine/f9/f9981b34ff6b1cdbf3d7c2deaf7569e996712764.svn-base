@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="unlock">#fe8100</color>
+    <color name="phone">#ffdc01</color>
+    <color name="sms">#94d95f</color>
+    <color name="camera">#5ec2d7</color>
+    <color name="gallery">#5f74d6</color>
+    <color name="seperator_line">#b2b2b2</color>
+	<color name="other_font">#adadad</color>
+	<color name="time">#ffffff</color>
+	
+	<!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="gray">#ffd1d4d6</color>
+    <color name="hour">#ffffffff</color>
+    <color name="minute">#ffdfdfdf</color>
+    <color name="weather">#ffc2c2c2</color>
+	<drawable name="other">#fff00f</drawable>
+	
+	<!-- 。。。。。。。。。。。。天气新模板用到。。。。。。。。。。。。。。。。。 -->
+	 <!-- 问题反馈界面所用到的颜色 -->
+    <color name="feed_back_background">#f6f6f6</color>
+    <color name="feedback_context_text_color">#535353</color>
+    <color name="feedback_radio_bg_color">#94d2f9</color>
+    <!-- 设置界面 -->
+    <color name="setting_title">#FFFFFFFF</color>
+    <color name="setting_panel">#7DCEF4</color>
+    <color name="setting_item">#525252</color>
+    <color name="setting_item_disable">#C8C8C8</color>
+    <color name="setting_item_summary">#959595</color>
+    <color name="setting_item_failed">#FF0000</color>
+    <!-- 未来天气列表的背景颜色 -->
+    <color name="list_today_background">#e4edf0</color>
+    <color name="list_other_background">#F0F0F0</color>
+    <!-- 未来天气界面用到的颜色 -->
+    <color name="forecast_tab_text_on">#FFFFFFFF</color>
+    <color name="forecast_tab_text_off">#FFAAAAAA</color>
+    <!-- 城市编辑预览城市卡片用到的颜色 -->
+    <color name="txtShadow_preview">#55FFFFFF</color>
+    <color name="txt_preview">#FF313131</color>
+    <color name="city_preview_del_color">#A5FF0000</color>
+    <!-- 启动界面 -->
+    <color name="launcher_text">#535353</color>
+    <!-- 24小时和未来天气界面中字符"今天"的颜色 -->
+    <color name="today_text_color">#EF00A0EA</color>
+    <!-- 24小时和未来天气界面无数据时提示文字的颜色 -->
+    <color name="warn_text_color">#FF545454</color>
+    <!-- 全局主题设置总界面 -->
+    <color name="nav_title_select">#FF03A1EB</color>
+    <color name="nav_title_normal">#FFFFFFFF</color>
+    <color name="nav_title_shadow">#B2FFFFFF</color>
+    <color name="light_gray">#FFA0A0A0</color>
+    <color name="light_blue">#FF7ECFF3</color>
+    <!-- 付费引导界面 -->
+    <color name="billing_blue">#FF7ECFF3</color>
+    <color name="billing_gray">#FF7D7D7D</color>
+    <color name="billing_orange">#FFFBB721</color>
+    <!-- 预警信息详情页面 -->
+    <color name="alert_white">#FFF6F6F6</color>
+    <color name="alert_gray">#FFE5E5E5</color>
+    <!-- 风力详情界面 -->
+    <color name="wind_speed_orange">#F39900</color>
+
+    <!-- 分享天气 -->
+    <color name="share_weather_gray">#FF787878</color>
+    
+    <!-- 对话框 -->
+    <color name="dialog_white">#FFFFFFFF</color>
+    <color name="dialog_blue">#FF8ACDF3</color>
+    <color name="dialog_title">#FF434343</color>
+    <color name="dialog_black">#FF535353</color>
+    <color name="dialog_cover">#65000000</color>
+    
+    <color name="btn_text_off">#ff000000</color>
+    <color name="btn_text_on">#fff88403</color>
+    
+    <!-- 主题设置UI -->
+    <color name="desk_setting_bg_color">#EEEEEE</color>
+    <!-- 。。。。。。。。。。。。天气新模板用到。。。。。。。。。。。。。。。。。 -->
+    
+    <color name="box_up">#ff161616</color>
+    <color name="box_down">#ff262626</color>
+    
+    <color name="crop_up">#FF161616</color>
+    <color name="crop_down">#FF363636</color>
+    
+    <color name="bg_add_defalut">#22ffffff</color>
+    <color name="bg_add_press">#44ffffff</color>
+</resources>

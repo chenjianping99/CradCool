@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:id="@+id/image_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+        <FrameLayout
+            android:id="@+id/image_choose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000">
+            
+            <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:background="@drawable/setting_page_random_bg_selected" />
+            
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/image_delete"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="right|top"
+            android:background="@drawable/setting_page_random_bg_delete_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/image_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/defaulttheme_wallpaper_item_selector"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:background="@drawable/add_wallpaper" />
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            />
+        
+    </FrameLayout>
+
+</FrameLayout>

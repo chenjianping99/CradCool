@@ -1,0 +1,6 @@
+sdk.dir				=/home/chenjianping/work/adt-bundle-linux-x86_64-20140321/sdk
+source.dir			=./src
+key.store			=./goscreenlock.keystore
+key.alias			=goscreenlock
+key.store.password	=3ggoscreenlock
+key.alias.password	=3ggoscreenlock

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 开关 -->
+    <string name="switch_airplane_mode">Airplane Mode</string>
+    <string name="switch_auto_sync">Auto-sync</string>
+    <string name="switch_battery">Battery</string>
+    <string name="switch_bluetooth">Bluetooth</string>
+    <string name="switch_brightness">Brightness</string>
+    <string name="switch_gprs">Data</string>
+    <string name="switch_gps">GPS</string>
+    <string name="switch_sound">Volume</string>
+    <string name="switch_wifi">WIFI</string>
+    <string name="switch_flashlight">Lamp</string>
+    
+    <string name="switch_auto_rotate">Auto Rotate</string>
+    <string name="switch_hapticfb">Haptic feedback</string>
+    <string name="switch_vibrate">Vibrate</string>
+    <string name="switch_screen_timeout">Srceen Timeout</string>
+    <string name="switch_wifi_ap">Wifi AP</string>
+</resources>

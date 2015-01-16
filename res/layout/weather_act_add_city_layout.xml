@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/weather_bg_white" >
+
+    <TextView
+        android:id="@+id/weather_guanggao"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/weather_guanggao"
+        android:gravity="center_vertical"
+        android:text="@string/weather_guanggao"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp" />
+    
+    <LinearLayout
+        android:id="@+id/act_add_city_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/weather_guanggao"
+        android:background="@drawable/weather_bg_white"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <LinearLayout
+            android:id="@+id/title_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/weather_share_weather_top_bar_bg"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical|left"
+                    android:maxLines="2"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/addcity_title_label"
+                    android:textColor="#ffffffff"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_city_title_curcity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="20"
+                android:paddingLeft="5dip" >
+
+                <ImageView
+                    android:id="@+id/add_city_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/weather_gps_btn" />
+
+                <ProgressBar
+                    android:id="@+id/add_city_curcity_progress"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 搜索栏 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_marginTop="20dip" >
+
+            <EditText
+                android:id="@+id/add_city_search_input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="66dip"
+                android:background="@drawable/weather_addcity_search_input_bg"
+                android:ellipsize="end"
+                android:hint="@string/addcity_search_input_default"
+                android:imeOptions="actionDone|actionUnspecified"
+                android:maxLength="26"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/add_city_search_submit"
+                android:layout_width="36dip"
+                android:layout_height="36dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/weather_btn_search" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_city_serach_eg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/add_city_search_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:singleLine="false"
+                android:text="@string/addcity_search_exampletext"
+                android:textColor="@color/weather_tips_text_selector"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/add_city_line_devide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/weather_add_city_line"
+            android:contentDescription="@null" />
+
+        <!-- 列表 -->
+
+        <ListView
+            android:id="@+id/add_city_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/weather_add_city_line"
+            android:dividerHeight="0.8dip" />
+
+        <TextView
+            android:id="@+id/add_city_empty_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/addcity_search_empty_lable"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/add_city_search_tip_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:paddingLeft="10dip"
+            android:text="@string/addcity_search_tip_label"
+            android:textColor="#FF999999"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/add_city_search_tip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="@string/addcity_search_tip_1"
+            android:textColor="#FF999999"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/add_city_search_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="@string/addcity_search_tip_2"
+            android:textColor="#FF999999"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/add_city_search_tip_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="@string/addcity_search_tip_3"
+            android:textColor="#FF999999"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

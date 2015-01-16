@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/crop_selected"
+            android:scaleType="fitCenter"
+            android:src="@drawable/crop_save"
+            android:text="@string/crop_save_text" />
+
+        <ImageView
+            android:id="@+id/discard"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/crop_selected"
+            android:scaleType="fitCenter"
+            android:src="@drawable/crop_back"
+            android:text="@string/crop_discard_text" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buttons"
+        android:background="#44000000" />
+
+</RelativeLayout>
